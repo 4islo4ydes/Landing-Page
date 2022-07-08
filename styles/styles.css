@@ -1,5 +1,4 @@
-
-.body{
+body{
     margin: 0;
 }
 
@@ -9,12 +8,11 @@ body *{
 .container{
     max-width: 1250px;
     margin: 0 auto;
-    
 }
 
 .button{
     background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
     outline: 0;
     border: 0;
@@ -24,13 +22,10 @@ body *{
     font-style: italic;
     justify-content: right;
     font-family: 'Nunito Sans', sans-serif;
-    
-   
 }
 
 .header{
     background-color: black;
-
 }
 
 .header-content{
@@ -42,7 +37,6 @@ body *{
     align-items: center;
     line-height: 15px;
     font-style: normal;
-    
 }
 
 .logo{
@@ -50,16 +44,14 @@ body *{
     text-transform: uppercase;
 }
 
-
 .header-navigation{
     list-style: none;
     display: flex;
-    
 }
 
 .header-navigation__item{
     margin-right: 47px;
-
+    /* отдавай предпочтение единице измерения REM */
 }
 
 .header-navigation__item a{
@@ -73,18 +65,16 @@ body *{
     background-size: cover;
     height: 707px;
     position: relative;
-
 }
 
 .hero-overlay{
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: rgba(0, 0, 0, .7);
-
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .hero-container{
@@ -93,7 +83,6 @@ background-color: rgba(0, 0, 0, .7);
 }
 
 .title{
-    margin: 0;
     font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
@@ -102,8 +91,8 @@ background-color: rgba(0, 0, 0, .7);
     text-transform: uppercase;
     color: #FFFFFF;
     padding-top: 194px;
-    margin-left: 134px;
-    margin-top: 0 auto;
+    /*margin: 0 auto; определись )) тут либо 99 строка либо 100-я */
+    /*margin-left: 134px;*/
 }
 
 .Rostov{
@@ -112,29 +101,30 @@ background-color: rgba(0, 0, 0, .7);
 
 
 .info{
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito Sans', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 19px;
     line-height: 36px;
     color: #FFFFFF;
-    
+
 }
 
 .button1{
     background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
     border-radius: 2px;
     color: white;
+    /* Дублируются параметры цвета. Вообще отдают предпочтение обычно HEX*/
+    color: #FFFFFF;
     width: 207px;
     height: 51px;
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito Sans', serif;
     font-style: italic;
     font-weight: 400;
     font-size: 11px;
     line-height: 15px;
     text-align: center;
-    color: #FFFFFF;
 
 }
 
@@ -143,7 +133,7 @@ background-color: rgba(0, 0, 0, .7);
     border-radius: 2px;
     width: 207px;
     height: 51px;
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito Sans', serif;
     font-style: italic;
     font-weight: 400;
     font-size: 11px;
@@ -152,65 +142,52 @@ background-color: rgba(0, 0, 0, .7);
     color: #FFFFFF;
     box-sizing: border-box;
     background-color: rgba(28,28,28,0)
-    
-
-
-
-    
 }
 
 .rectangle{
     background: url(../images/Rectangle.png);
-    background: #131313; 
+    background: #131313;
     position: absolute;
     box-sizing: border-box;
     margin: 0 auto;
     width: 1250px;
     height: 1074px;
-    
-    
 }
-
-
 
 .living-room{
     position: absolute;
-    margin-top: 176px;
-    margin-bottom: 416px;
-    margin-right: 134.55px;
-    margin-left: 626px;
+    /* никогда не используй float величины 134.55. отдавай предпочтение REM */
+    margin: 176px 134.55px 416px 626px;
     max-width: 100px;
-
 }
 
+/* Имя не информативное. Не используй имена с приставками 1-2-3 и тд.
+   Каждый блок особенный, а значит заслуживает на свое собственное имя )) */
 .container1{
     max-width: 1250px;
     position: relative;
 }
 
-
-
 .main-navigation{
     display: flex;
     list-style: none;
     justify-content: space-between;
+    /* Определись с параметром. В каждом классе может быть только один уникальный параметр  )) */
+    justify-content: end;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 11px;
     height: 83px;
     align-items: center;
     line-height: 15px;
     font-style: normal;
-    justify-content: end;
     margin-top: 107px;
-    
-    
+
+
 }
-
-
 
 .title1{
     margin-top: 76px;
-    font-family: 'Yeseva One';
+    font-family: 'Yeseva One', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
@@ -221,27 +198,19 @@ background-color: rgba(0, 0, 0, .7);
 
 }
 
-.main-navigation__item1 a{
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-transform: uppercase;
+.main-navigation__item.active a,
+.main-navigation__item a:hover {
     color: #E3B873;
-    padding: 60px;
-
 }
 
 .main-navigation__item a{
-    font-family: 'Yeseva One';
+    font-family: 'Yeseva One', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
+    padding: 60px;
     color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
-    padding: 60px;
-  
 }
